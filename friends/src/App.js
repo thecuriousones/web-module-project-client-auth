@@ -5,28 +5,18 @@ import './App.css';
 import PrivateRoute from './components/PrivateRoute';
 import FriendsList from './components/FriendsList';
 import FriendForm from './components/addAFriendForm';
+import Home from './components/LandingPage';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/friends">Friends</Link>
-            </li>
-          </ul>
-          <p className='websitename'>FIND-A-FRIEND</p>
           <Switch>
             <PrivateRoute exact path='/friends' component={FriendsList} />
             <PrivateRoute exact path='/addfriends' component={FriendForm} />
             <Route path='/login' component={Login}/>
+            <Route exact path='/' component={Home}/>
           </Switch>
       </div>
     </Router>

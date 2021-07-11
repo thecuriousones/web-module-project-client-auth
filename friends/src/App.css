@@ -30,3 +30,8 @@ a {
   font-size: medium;
   font-weight: 600;
 }
+
+input {
+  border: 1px solid black;
+  margin-top: 5rem;
+}

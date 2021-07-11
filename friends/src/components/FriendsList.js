@@ -25,9 +25,26 @@ class FriendsList extends React.Component {
             .catch(err => console.log(err));
     }
 
+    logout = () => {
+        localStorage.removeItem("token");
+        console.log("Logged out!");
+        this.props.history.push("/");
+      };
+
     render() {
         return (
-            <div> loading..
+            <div>
+                <div>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link onClick={this.logout}>Logout</Link>
+                        </li>
+                    </ul>
+                    <p className='websitename'>FIND-A-FRIEND</p>
+                </div>
                 {this.state.friends.map(friend => (
                     <div key={friend.id}>
                         <p>{friend.name}</p>
@@ -38,7 +55,7 @@ class FriendsList extends React.Component {
                 )
                 )}
                 <div>
-                  <Link to="/addfriends">+ Add a New Friend</Link>
+                    <Link to="/addfriends">+ Add a New Friend</Link>
                 </div>
             </div>
         )
