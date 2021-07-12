@@ -29,9 +29,16 @@ a {
   margin-left: 1rem;
   font-size: medium;
   font-weight: 600;
+  margin-bottom: 5rem;
 }
 
-input {
-  border: 1px solid black;
-  margin-top: 5rem;
+.class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
+
+
+
+
