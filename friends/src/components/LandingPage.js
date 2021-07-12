@@ -29,8 +29,8 @@ function Home() {
                                 <Link to="/login" class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
                                     Login
                                 </Link>
-                                <Link to='/friends' class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
-                                    Friends
+                                <Link to='/' class="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                                    Contact
                                 </Link>
                             </div>
                         </div>
