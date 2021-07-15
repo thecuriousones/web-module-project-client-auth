@@ -46,6 +46,7 @@ class FriendsList extends React.Component {
                     <p className='websitename'>FIND-A-FRIEND</p>
                 </div>
                 <div>
+                    <h1 className='title'>My Friends</h1>
                     {this.state.friends.map(friend => (
                         <div key={friend.id} className='class'>
                             <div class="relative bg-white py-6 px-6 rounded-3xl w-64 my-4 shadow-xl">
@@ -77,7 +78,7 @@ class FriendsList extends React.Component {
                     )
                     )}
                 </div>
-                <div>
+                <div style={{marginTop: '3.5rem'}}>
                     <Link to="/addfriends">+ Add a New Friend</Link>
                 </div>
             </div>

@@ -118,6 +118,8 @@ class FriendForm extends React.Component {
                         </div>
                     </div>
                 </form>
+                <div style={{marginBottom: '1rem'}}></div>
+                <Link to="/friends">Go Back</Link>
                 <div className='space'>
                     <p>empty space</p>
                     <p>empty space</p>
