@@ -78,7 +78,7 @@ class FriendsList extends React.Component {
                     )
                     )}
                 </div>
-                <div style={{marginTop: '3.4rem'}}>
+                <div style={{marginTop: '3.5rem'}}>
                     <Link to="/addfriends">+ Add a New Friend</Link>
                 </div>
             </div>
