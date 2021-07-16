@@ -8,7 +8,7 @@ const token =
 
 let nextId = 7;
 
-let friends = [
+ let friends = [
   {
     id: 1,
     name: 'Rachel Green',
@@ -62,7 +62,7 @@ function authenticator(req, res, next) {
 
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === 'Lambda' && password === 'School') {
+  if (username === 'thewanderingones' && password === 'placestosee') {
     req.loggedIn = true;
     res.status(200).json({
       payload: token
